@@ -2,6 +2,7 @@ const  connect = require('./play');
 let connection;
 
 const handleUserInput = function(data) {
+connection.write("Say: Kermit de Frog")
   if (data === '\u0003') {
     process.exit();
   } else if (data === "w") {
@@ -14,6 +15,7 @@ const handleUserInput = function(data) {
     connection.write("Move: right")
   }
 }
+
 
 const setupInput = function(conn) {
   connection = conn;
