@@ -3,8 +3,8 @@ const  connect  = require('./client');
 const setupInput = require('./input');
 
 console.log('Connecting ...');
-connect();
+let connection = connect();
 
-setupInput()
+setupInput(connection);
 
-module.exports = connect;
+//module.exports = connect;
